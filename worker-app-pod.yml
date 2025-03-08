@@ -11,7 +11,7 @@ spec:
     image: kodekloud/examplevotingapp_worker:v1
     env:
     - name: DB_HOST
-      value: "postgres-service"  # Example hostname
+      value: "postgres-service"
     - name: DB_PORT
       value: "5432"
     - name: DB_NAME
