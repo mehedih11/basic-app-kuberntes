@@ -13,7 +13,7 @@ spec:
   ports:
     - port: 80
       targetPort: 80
-      NodePort: 30009
+      nodePort: 30009
   selector:
     app: voting-app
     name: result-app

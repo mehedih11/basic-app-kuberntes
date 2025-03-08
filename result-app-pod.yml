@@ -1,6 +1,6 @@
 apiVersion: v1 
 
-kind: Pod myapp
+kind: Pod
 metadata: 
   name: result-app-pod
   labels: 
@@ -13,10 +13,4 @@ spec:
       image: kodekloud/examplevotingapp_result:v1
       ports: 
         - containerPort: 80
-      resources:
-        requests:
-          memory: '64Mi'
-          cpu: '250m'
-        limits:
-          memory: '128Mi'
-          cpu: '500m'
+      
