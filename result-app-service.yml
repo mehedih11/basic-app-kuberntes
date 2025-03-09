@@ -1,13 +1,10 @@
 apiVersion: v1
-
-kind: Service 
-
+kind: Service
 metadata:
   name: result-app-service
   labels:
     app: voting-app
     name: result-app-service
-
 spec:
   type: NodePort
   ports:

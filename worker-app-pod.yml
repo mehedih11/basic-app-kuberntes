@@ -7,16 +7,16 @@ metadata:
     name: worker-app-pod
 spec:
   containers:
-  - name: worker-app
-    image: kodekloud/examplevotingapp_worker:v1
-    env:
-    - name: DB_HOST
-      value: "postgres-service"
-    - name: DB_PORT
-      value: "5432"
-    - name: DB_NAME
-      value: "voting_app"
-    - name: DB_USER
-      value: "postgres"
-    - name: DB_PASSWORD
-      value: "postgres"
+    - name: worker-app
+      image: kodekloud/examplevotingapp_worker:v1
+      env:
+        - name: DB_HOST
+          value: "postgres-service"
+        - name: DB_PORT
+          value: "5432"
+        - name: DB_NAME
+          value: "voting_app"
+        - name: DB_USER
+          value: "postgres"
+        - name: DB_PASSWORD
+          value: "postgres"
