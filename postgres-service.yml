@@ -5,13 +5,12 @@ metadata:
   name: postgres
   labels:
     app: voting-app
-    name: postgres-service
+    service: postgres-service
 
 spec: 
   selector:
     app: voting-app
-    name: postgres
+    name: postgres-pod
   ports:
     - port: 5432
       targetPort: 5432
-      
